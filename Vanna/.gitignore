@@ -1,0 +1,41 @@
+# Environment variables - 敏感信息，禁止提交
+.env
+.env.local
+*.env
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+ENV/
+build/
+*.egg-info/
+
+# Vanna/ChromaDB
+chroma.sqlite3
+*.sqlite3
+**/chroma.sqlite3
+# ChromaDB 数据目录
+**/data_level0.bin
+**/header.bin
+**/length.bin
+**/link_lists.bin
+# UUID 目录（ChromaDB 集合）
+[0-9a-f]*-[0-9a-f]*-[0-9a-f]*-[0-9a-f]*-[0-9a-f]*
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+

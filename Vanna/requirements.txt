@@ -1,0 +1,21 @@
+# Vanna 连接阿里云 MySQL 所需依赖包
+
+# Vanna 核心包（包含 openai、chromadb、mysql 可选扩展）
+# 注意: 在 zsh 中安装时需要使用引号: pip install 'vanna[openai,chromadb,mysql]'
+vanna[openai,chromadb,mysql]>=0.5.0
+
+# OpenAI API 客户端（支持兼容接口）
+openai>=1.0.0
+
+# 环境变量管理
+python-dotenv>=1.0.0
+
+# MySQL 数据库连接
+mysql-connector-python>=8.0.0
+
+# ChromaDB 向量数据库（Vanna 使用）
+chromadb>=0.4.0
+
+# 可选：如果需要使用其他数据库
+# pymysql>=1.1.0
+
